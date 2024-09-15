@@ -1,27 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul id="menu">
-                <li><a href="#" id="quem-sou-eu">Quem Sou Eu</a></li>
-                <li><a href="#" id="projetos">Projetos</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="content">
-        <h1>Bem-vindo!</h1>
-        <p>Clique nos menus para ver mais informações.</p>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daniel Destro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="projetos">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="language">Language</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#" id="portugues">Português</a></li>
+                            <li><a href="#" id="english">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1 class="container">
+            Welcome to my personal webpage (under construction)!
+        </h1>
+                
+        <p> 
+            Here you can know more about my personal and professional profile.
+        </p>
 
-    <script src="script.js"></script>
-</body>
+        <p>
+            I have over 15 years of experience in the automotive industry, 
+            working in product development and application areas. Always 
+            result-oriented, with flexibility, empathy, and fostering 
+            communication and integration among people, I have built a 
+            successful career.
+        </p>
+
+        <p>
+            My personal values are rooted in Christianity, and I my family is my
+            greatest treasure in this world.
+        </p>
+
+        <p>
+            I am passionate about knowledge and stand out for the breadth of my
+            general and technical expertise in electronics, mechanics, software,
+            automation, and control.
+        </p>
+
+        <div class="container">
+            <h2>Awards and Highlights</h2>
+        </div>
+
+        <div class="container">
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <!-- Caixas com troféus e números abaixo -->
+                    <div class="box">
+                        <img src="trophy.png" alt="Troféu" class="trophy">
+                        <div class="premio">
+                            <p>Crea Professional Development Award</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="trophy.png" alt="Troféu" class="trophy">
+                        <div class="premio">
+                            <p>Institute of Engineering Award</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="trophy.png" alt="Troféu" class="trophy">
+                        <div class="premio">
+                            <p>1st PLACE - Electrical Engineering Course</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="trophy.png" alt="Troféu" class="trophy">
+                        <div class="premior">
+                            <p> 1st PLACE - Fatec Entrance Exam</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="trophy.png" alt="Troféu" class="trophy">
+                        <div class="premio">
+                            <p>1st PLACE in the UNICAMP Postgraduate</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="trophy.png" alt="Troféu" class="trophy">
+                        <div class="premio">
+                            <p>BOSCH LEAD CERTIFIED (LFG)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-container">
+            <h2>Education</h2>
+        
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Institution</th>
+                        <th>Degree</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Gerando linhas e colunas dinamicamente -->
+                    <!-- Exemplo de 10 linhas com 4 colunas -->
+                    <tr>
+                        <td>Management of Digital Transformation</td>
+                        <td>University of Sao Paulo (USP)</td>
+                        <td>MBA</td>
+                        <td>9.5 (of 10)</td>
+                    </tr>
+                    <tr>
+                        <td>Business Management</td>
+                        <td>Getulio Vargas Foundation (FGV)</td>
+                        <td>MBA</td>
+                        <td>9.2 (of 10)</td>
+                    </tr>
+                    <tr>
+                        <td>Specialization in Automation and Process Control</td>
+                        <td>University of Campinas (UNICAMP)</td>
+                        <td>Postgraduate</td>
+                        <td>9.8 (of 10)</td>
+                    </tr>
+                    <tr>
+                        <td>Electrical Engineering</td>
+                        <td>Sorocaba Engineering School (FACENS)</td>
+                        <td>Bachelor</td>
+                        <td>9.2 (of 10)</td>
+                    </tr>
+                    <tr>
+                        <td>Technology in Mechanical Design</td>
+                        <td>Sorocaba Technology School (FATEC)</td>
+                        <td>Technology Graduate</td>
+                        <td>4.2 (of 5)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
 

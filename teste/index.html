@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo com Transparência</title>
+    <style>
+        .background-container {
+            position: relative;
+            text-align: center; /* Centraliza o conteúdo horizontalmente */
+            padding: 20px; /* Espaçamento ao redor do conteúdo */
+        }
+
+        .background-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('graduation_960_720.jpg') no-repeat center center;
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
+            opacity: 0.5; /* Define a transparência da imagem de fundo */
+            z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+        }
+
+        h2 {
+            position: relative;
+            color: #333; /* Cor do texto */
+            font-size: 2em; /* Tamanho da fonte */
+            margin: 0;
+            z-index: 1; /* Garante que o texto fique sobre a imagem */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container">
+        <h2>Seu Título Aqui</h2>
+    </div>
+
+</body>
+</html>

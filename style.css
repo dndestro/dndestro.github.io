@@ -2,12 +2,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    background-color: #000;
+    background-color: #0477BF;
 }
 
 nav ul {
@@ -37,7 +35,7 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000;
+    background-color: #102a72;
     min-width: 100px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -67,4 +65,111 @@ nav ul li a:hover {
     display: block;
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Estilos para a faixa rolante */
+.scroll-container {
+    width: 100%;
+    overflow-x: auto; /* Ativa a rolagem horizontal */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-content {
+    display: inline-block; /* Mantém o conteúdo em uma linha */
+    white-space: nowrap; /* Garante que os itens não quebrem de linha */
+    
+}
+
+.box {
+    display: inline-block;
+    width: 170px;
+    height: 150px; 
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    margin-right: 15px;
+    text-align: center;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: #333;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.trophy {
+    width: 32px; /* Define a largura do troféu */
+    height: 32px; /* Define a altura do troféu */
+    margin-bottom: 10px; /* Espaço entre o troféu e o número */
+}
+
+.premio {
+    font-size: 15px;
+    color: #333;
+}
+
+.container{
+    width: 100%; /* Defina uma largura fixa ou percentual */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Opcional: centraliza o conteúdo de texto */
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+.styled-table thead {
+    background-color: #0594ED;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+/*.styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}*/
+.styled-table tbody tr:hover {
+    background-color: #d9eaf7;
+}
+.styled-table th {
+    font-weight: bold;
+}
+
+.background-container {
+    position: relative;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento ao redor do conteúdo */
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('graduation_960_720.jpg') no-repeat center center;
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
+    opacity: 0.15; /* Define a transparência da imagem de fundo */
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+h2 {
+    position: relative;
+    color: #333; /* Cor do texto */
+    font-size: 2em; /* Tamanho da fonte */
+    margin: 0;
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
 }

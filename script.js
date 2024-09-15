@@ -1,5 +1,5 @@
 // Menu interativo "Quem Sou Eu"
-document.getElementById('quem-sou-eu').addEventListener('click', function() {
+document.getElementById('home').addEventListener('click', function() {
     document.getElementById('content').innerHTML = `
         <h1>Quem Sou Eu</h1>
         <p>Eu sou um desenvolvedor apaixonado por web design e programação!</p>

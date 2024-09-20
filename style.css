@@ -1,4 +1,9 @@
-/* Estilos gerais */
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -7,6 +12,7 @@ body {
 header {
     background-color: #0477BF;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -29,6 +35,16 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ccc;
+}
+
+main {
+    margin: auto;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+.principal{
+    text-align: justify;
 }
 
 /* Estilo para o submenu (dropdown) */
@@ -67,6 +83,7 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
+ 
 /* Estilos para a faixa rolante */
 .scroll-container {
     width: 100%;
@@ -75,7 +92,7 @@ nav ul li a:hover {
     padding: 20px;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: left ;
 }
 
 .scroll-content {
@@ -150,10 +167,10 @@ nav ul li a:hover {
 .background-container {
     position: relative;
     text-align: center; /* Centraliza o conteúdo horizontalmente */
-    padding: 20px; /* Espaçamento ao redor do conteúdo */
+    margin-top: 50px; /* Espaçamento ao redor do conteúdo */
 }
 
-.background-container::before {
+.____background-container::before {
     content: "";
     position: absolute;
     top: 0;

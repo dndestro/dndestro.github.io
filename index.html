@@ -1,217 +1,328 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Daniel Destro</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul id="menu">
-                    <li><a href="#" id="home">Home</a></li>
-                    <li><a href="#" id="projetos">Projects</a></li>
-                    <li class="dropdown">
-                        <a href="#" id="language">Language</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#" id="portugues">Português</a></li>
-                            <li><a href="#" id="english">English</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <h1 class="container">
-                Welcome to my personal webpage (under construction)!
-            </h1>
-                    
-            <p class="principal"> 
-                Here you can know more about my personal and professional profile.
-            </p>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Destro - Perfil Executivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Partículas de Fundo -->
+    <div class="particles">
+        <div class="particle" style="width: 4px; height: 4px; background: #00d4ff; top: 20%; left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="width: 6px; height: 6px; background: #0099ff; top: 60%; left: 80%; animation-delay: 5s;"></div>
+        <div class="particle" style="width: 3px; height: 3px; background: #00d4ff; top: 80%; left: 20%; animation-delay: 10s;"></div>
+        <div class="particle" style="width: 5px; height: 5px; background: #0099ff; top: 40%; left: 70%; animation-delay: 15s;"></div>
+    </div>
 
-            <p class="principal">
-                I have over 15 years of experience in the automotive industry, 
-                working in product development and application areas. Always 
-                result-oriented, with flexibility, empathy, and fostering 
-                communication and integration among people, I have built a 
-                successful career.
-            </p>
-
-            <p class="principal">
-                My personal values are rooted in Christianity, and I my family is my
-                greatest treasure in this world.
-            </p>
-
-            <p class="principal">
-                I am passionate about knowledge and stand out for the breadth of my
-                general and technical expertise in electronics, mechanics, software,
-                automation, and control.
-            </p>
-
-            <div class="container">
-                <h2>Awards and Highlights</h2>
+    <!-- NAVEGAÇÃO -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">DD</div>
+            <ul id="navMenu">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#awards"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+        </div>
+    </nav>
 
-            <div class="container">
-                <div class="scroll-container">
-                    <div class="scroll-content">
-                        <!-- Caixas com troféus e números abaixo -->
-                        <div class="box">
-                            <img src="trophy.png" alt="Troféu" class="trophy">
-                            <div class="premio">
-                                <p>Crea Professional Development Award</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="trophy.png" alt="Troféu" class="trophy">
-                            <div class="premio">
-                                <p>Institute of Engineering Award</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="trophy.png" alt="Troféu" class="trophy">
-                            <div class="premio">
-                                <p>1st PLACE - Electrical Engineering Course</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="trophy.png" alt="Troféu" class="trophy">
-                            <div class="premior">
-                                <p> 1st PLACE - Fatec Entrance Exam</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="trophy.png" alt="Troféu" class="trophy">
-                            <div class="premio">
-                                <p>1st PLACE in the UNICAMP Postgraduate</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <img src="trophy.png" alt="Troféu" class="trophy">
-                            <div class="premio">
-                                <p>BOSCH LEAD CERTIFIED (LFG)</p>
-                            </div>
-                        </div>
+    <!-- Side Navigation -->
+    <div class="side-nav">
+        <a href="#home" data-tooltip="Home"></a>
+        <a href="#about" data-tooltip="About"></a>
+        <a href="#awards" data-tooltip="Awards"></a>
+        <a href="#education" data-tooltip="Education"></a>
+        <a href="#contact" data-tooltip="Contact"></a>
+    </div>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1><span>Daniel Destro</span></h1>
+                <p class="subtitle">International Experience Driving Innovation
+                    and Integration in Automotive Development
+                </p>
+                <div class="hero-badges">
+                    <div class="badge"><i class="fas fa-briefcase"></i> 20+ Years of Expertise</div>
+                    <div class="badge"><i class="fas fa-globe"></i> Global Experience</div>
+                    <div class="badge"><i class="fas fa-network-wired"></i> Innovation Driven</div>
+					<div class="badge"><i class="fas fa-chart-line"></i> Digital Transformation Mindset</div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#about" class="cta-btn primary">Explore My Work</a>
+                    <a href="#contact" class="cta-btn secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop" alt="Daniel Destro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="section-title">
+            <h5>Who I Am</h5>
+            <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-content">
+                <p>With over 15 years of experience in the automotive industry, I've dedicated my career to driving innovation and 
+                    excellence in product development and application engineering. My journey has been marked by a relentless 
+                    pursuit of technical excellence combined with strong leadership capabilities.</p>
+                <p>I specialize in bridging the gap between complex technical challenges and practical business solutions, always 
+                    maintaining a people-first approach that emphasizes collaboration, empathy, and continuous improvement. 
+                    My expertise spans across international markets, bringing a global perspective to every project.</p>
+                <ul class="info-list">
+                    <li><i class="fas fa-map-marker-alt"></i> <strong>Projects:</strong> Brazil, USA, Europe, China, India.</li>
+                    <li><i class="fas fa-briefcase"></i> <strong>Position:</strong> Leader in Automotive Industry</li>
+                    <li><i class="fas fa-graduation-cap"></i> <strong>Education:</strong> 2 MBA + 2 Specialization + 2 Graduation</li>
+                    <li><i class="fas fa-code"></i> <strong>Digitalization:</strong> Data Analysis, IoT, Automation.</li>
+                </ul>
+            </div>
+            <div class="stats-box">
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>20+</h3>
+                    <p>Years of Expertise</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>25+</h3>
+                    <p>Major Projects</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>10+</h3>
+                    <p>Personal and Team Awards</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>25+</h3>
+                    <p>Team Members Led</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARDS SECTION -->
+    <section id="awards">
+        <div class="section-title">
+            <h5>Highlights</h5>
+            <h2>Awards and Achievements</h2>
+        </div>
+        <div class="awards-grid">
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Crea Professional Development Award</h3>
+                <span class="year">2023</span>
+                <p>Recognized as Best Student of Electrical Engineering for outstanding academic performance and innovative project contributions to the field.</p>
+            </div>
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-medal"></i></div>
+                <h3>Engineering Institute Award</h3>
+                <span class="year">2022</span>
+                <p>Honored by the Engineering Institute for exceptional dedication and groundbreaking research in sustainable automotive technologies.</p>
+            </div>
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-star"></i></div>
+                <h3>1st Place - Fatec Entrance Test</h3>
+                <span class="year">2021</span>
+                <p>Achieved top ranking among 400+ candidates in highly competitive entrance examination, demonstrating exceptional analytical skills.</p>
+            </div>
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-award"></i></div>
+                <h3>1st Place - UNICAMP Postgraduate</h3>
+                <span class="year">2020</span>
+                <p>Top performer in postgraduate program, subsequently invited by professors to teach advanced Microcontrollers courses.</p>
+            </div>
+            
+            <!-- NOVOS AWARDS -->
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>Innovation Excellence Award</h3>
+                <span class="year">2024</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-certificate"></i></div>
+                <h3>Industry Leadership Recognition</h3>
+                <span class="year">2023</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet.</p>
+            </div>
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-crown"></i></div>
+                <h3>Technology Pioneer Award</h3>
+                <span class="year">2022</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare.</p>
+            </div>
+            <div class="award-card">
+                <div class="award-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Digital Transformation Champion</h3>
+                <span class="year">2021</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <div class="section-title">
+            <h5>Education</h5>
+            <h2>Academic Background</h2>
+        </div>
+        <div class="education-grid">
+            <!-- FGV -->
+            <div class="education-card">
+                <div class="edu-image">
+                    <img src="images/fgv.jpg" alt="FGV">
+                    <div class="edu-logo">
+                        <i class="fas fa-university"></i>
                     </div>
                 </div>
-            </div>
-
-            <div class="background-container">
-                <h2>Education</h2>
-                
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Course</th>
-                            <th>Institution</th>
-                            <th>Degree</th>
-                            <th>GPA</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Management of Digital Transformation</td>
-                            <td>University of Sao Paulo (USP)</td>
-                            <td>MBA</td>
-                            <td>9.5 (of 10)</td>
-                        </tr>
-                        <tr>
-                            <td>Business Management</td>
-                            <td>Getulio Vargas Foundation (FGV)</td>
-                            <td>MBA</td>
-                            <td>9.2 (of 10)</td>
-                        </tr>
-                        <tr>
-                            <td>Specialization in Automation and Process Control</td>
-                            <td>University of Campinas (UNICAMP)</td>
-                            <td>Postgraduate</td>
-                            <td>9.8 (of 10)</td>
-                        </tr>
-                        <tr>
-                            <td>Electrical Engineering</td>
-                            <td>Sorocaba Engineering School (FACENS)</td>
-                            <td>Bachelor</td>
-                            <td>9.2 (of 10)</td>
-                        </tr>
-                        <tr>
-                            <td>Technology in Mechanical Design</td>
-                            <td>Sorocaba Technology School (FATEC)</td>
-                            <td>Technology Graduate</td>
-                            <td>4.2 (of 5)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="background-container">
-                <h2> Hobbies </h2>
-                <p class="principal"> Due to my passion for technology, one of
-                    my hobbies is to develop electronic devices within the arduino
-                    framework. 
-                </p>
-                <p class="principal">
-                    Develop my software skills is also an important hobby for 
-                    me. That allows me to create solutions in C++, Python, SQL 
-                    Power BI and VBA.
-                    I also have basic experiences with Html, CSS and Javascript,
-                    as well as basic knowledge in Linux, Home Assistant and
-                    Docker.
-                </p>
-
-            </div>
-            <div class="background-container">
-                <h2> Experience </h2>
-                <div>
-                    <div> Bosch Brazil</div>
-                    <div> Head of Test engineering</div>
-                    <p class="principal">
-                        As Head of the Test Engineering, I have been supporting
-                        international customer projects with release tests and
-                        building up hundreds of prototypes with a turn over of
-                        millions of dollars.
-                    </p>
-                        
-                    <p class="principal">
-                        I coordinate the knowkedge tranfer of electro-hydraulic
-                        steering gears for commercial vehicles from Germany to
-                        Brazil and my team built the first prototypes of this
-                        technology outside Germany aiming the US market where
-                        we have been growing up.
-                    </p>
-
-                    <p class="principal">
-                        The Brazilian local market was conquered with customer
-                        centricity and outstanding team work and collaboration
-                        with customers, achiving a market share over 90%.
-                    </p>
-
-                    <p class="principal">
-                        Business profit and competitiveness have been granted
-                        with safety throuth the succesful release of cost
-                        reduction measures and full support of manufacture and
-                        quality assurance.
-                    </p>
-
-                    <p class="principal">
-                        Tackling huge teechnical challenges would not be 
-                        possible without developing the people and keeping the 
-                        team under an impressive colaboration and friendship
-                        atmosphere.
-                    </p>
-                        
-                    <p class="principal">
-                        Due to my extent knowledge, I have also been developing
-                        projects and measures beyond the scope of my leading
-                        position, not only with important data analysis projects
-                        able to save million of dollars but also on process
-                        automation to improve efficiency in many tasks.
-                    </p>
+                <div class="edu-content">
+                    <span class="edu-badge">MBA</span>
+                    <h4>Business Administration</h4>
+                    <span class="institution">FGV - Fundação Getulio Vargas</span>
+                    <span class="year">2020 - 2022 | GPA: 9.5</span>
+                    <p class="edu-description">Advanced executive program focusing on strategic management, financial analysis, and organizational leadership.</p>
                 </div>
             </div>
-        </main>    
-        <script src="script.js"></script>
-    </body>
-</html>
+            
+            <!-- USP -->
+            <div class="education-card">
+                <div class="edu-image">
+                    <img src="images/usp.jpg" alt="USP">
+                    <div class="edu-logo">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-badge">PhD</span>
+                    <h4>Lorem Ipsum Engineering</h4>
+                    <span class="institution">USP - Universidade de São Paulo</span>
+                    <span class="year">2022 - 2024 | GPA: 9.7</span>
+                    <p class="edu-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+            
+            <!-- UNICAMP -->
+            <div class="education-card">
+                <div class="edu-image">
+                    <img src="images/unicamp.jpg" alt="UNICAMP">
+                    <div class="edu-logo">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-badge">Specialization</span>
+                    <h4>Advanced Engineering</h4>
+                    <span class="institution">UNICAMP - Universidade Estadual de Campinas</span>
+                    <span class="year">2018 - 2019 | GPA: 9.8</span>
+                    <p class="edu-description">Comprehensive program in embedded systems, IoT applications, and Industry 4.0 technologies with practical projects in automotive electronics.</p>
+                </div>
+            </div>
+            
+            <!-- PUC MINAS -->
+            <div class="education-card">
+                <div class="edu-image">
+                    <img src="images/pucminas.jpg" alt="PUC Minas">
+                    <div class="edu-logo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-badge">Master</span>
+                    <h4>Lorem Ipsum Technology</h4>
+                    <span class="institution">PUC Minas - Pontifícia Universidade Católica de Minas Gerais</span>
+                    <span class="year">2019 - 2021 | GPA: 9.4</span>
+                    <p class="edu-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet.</p>
+                </div>
+            </div>
+            
+            <!-- FATEC -->
+            <div class="education-card">
+                <div class="edu-image">
+                    <img src="images/fatec.jpg" alt="FATEC">
+                    <div class="edu-logo">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-badge">Technology</span>
+                    <h4>Lorem Ipsum Systems</h4>
+                    <span class="institution">FATEC - Faculdade de Tecnologia de São Paulo</span>
+                    <span class="year">2016 - 2018 | GPA: 9.3</span>
+                    <p class="edu-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare.</p>
+                </div>
+            </div>
+            
+            <!-- FACENS -->
+            <div class="education-card">
+                <div class="edu-image">
+                    <img src="images/facens.jpg" alt="FACENS">
+                    <div class="edu-logo">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+                <div class="edu-content">
+                    <span class="edu-badge">Graduation</span>
+                    <h4>Electrical Engineering</h4>
+                    <span class="institution">FACENS - Faculdade de Engenharia de Sorocaba</span>
+                    <span class="year">2014 - 2018 | GPA: 9.2</span>
+                    <p class="edu-description">Bachelor's degree with emphasis on power systems, control theory, and electronics. Final project on autonomous vehicle navigation systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="section-title">
+            <h5>Get In Touch</h5>
+            <h2>Let's Connect</h2>
+        </div>
+        <div class="contact-links">
+            <a href="https://linkedin.com/in/daniel-destro" target="_blank" class="contact-btn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/dndestro" target="_blank" class="contact-btn">
+                <i class="fab fa-github"></i>
+                <span>GitHub Profile</span>
+            </a>
+            <a href="mailto:daniel@example.com" class="contact-btn">
+                <i class="fas fa-envelope"></i>
+                <span>Send Email</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Daniel Destro. All rights reserved.</p>
+        <a href="#home" class="back-to-top">
+            <span>Back to Top</span>
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

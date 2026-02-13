@@ -390,6 +390,7 @@ nav ul li a:hover::after {
 }
 
 .hero-image-wrapper {
+    width: 75%;
     position: relative;
     border-radius: 50% 20% 50% 20%;
     overflow: hidden;
